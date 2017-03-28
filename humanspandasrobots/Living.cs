@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace humanspandasrobots
 {
-    class Living
-    {
-
-        public string Food { get; set; }
-
-        public void Eat()
+        interface ILiving
         {
-            Console.WriteLine($"Yum, I ate {Food}.");
+        void Eat();
         }
-
-    }
 }

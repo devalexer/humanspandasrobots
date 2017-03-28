@@ -6,23 +6,12 @@ using System.Threading.Tasks;
 
 namespace humanspandasrobots
 {
-    class Robot
+    class Robot : Creatures
     {
-        public string Name { get; set; }
-        public string Greeting { get; set; }
+
         public bool IsAsleep { get; set; }
         public bool Terminator { get; set; }
 
-
-        public void DisplayName()
-        {
-            Console.WriteLine($"My name is {Name}");
-        }
-
-        public void DisplayGreeting()
-        {
-            Console.WriteLine($"My Greeting is: {Greeting}");
-        }
 
         public void StartUp()
         {
