@@ -6,14 +6,7 @@ using System.Threading.Tasks;
 
 namespace humanspandasrobots
 {
-    class Program
+    class Human
     {
-        static void Main(string[] args)
-        {
-
-
-
-
-        }
     }
 }
