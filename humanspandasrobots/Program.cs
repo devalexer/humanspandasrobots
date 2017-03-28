@@ -50,7 +50,15 @@ namespace humanspandasrobots
             marvin.GoToSleep();
             marvin.WakeUp();
 
+            var allcreatures = new List<Creatures>
+            {
+                jane, baobao, marvin
+            };
 
+            var consumers = new List<ILiving>
+            {
+                jane, baobao
+            };
 
 
 
