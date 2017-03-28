@@ -8,24 +8,38 @@ namespace humanspandasrobots
 {
     class Panda
     {
-        //Create a class definition for a Human, a Robot, and a Panda in separate files.
-
-        //All classes should have a "DisplayName()" and a "DisplayGreeting()" method.
-        //The "DisplayName()" function should return the value held in the property "Name".
-
 
         public string Name { get; set; }
         public string Greeting { get; set; }
+        public string Food { get; set; }
+        public bool IsAsleep { get; set; }
 
 
-        public string DisplayName()
+        public void DisplayName()
         {
-            return this.Name;
+            Console.WriteLine($"My name is {Name}");
         }
 
-        public string DisplayGreeting()
+        public void DisplayGreeting()
         {
-            return $"{Greeting}";
+            Console.WriteLine($"My Greeting is: {Greeting}");
+        }
+
+        public void Eat()
+        {
+            Console.WriteLine($"Yum, I ate {Food}.");
+        }
+
+        public bool GoToSleep()
+        {
+            IsAsleep = true;
+            return IsAsleep;
+        }
+
+        public bool WakeUp()
+        {
+            IsAsleep = false;
+            return IsAsleep;
         }
 
     }

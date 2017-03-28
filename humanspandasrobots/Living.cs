@@ -8,5 +8,13 @@ namespace humanspandasrobots
 {
     class Living
     {
+
+        public string Food { get; set; }
+
+        public void Eat()
+        {
+            Console.WriteLine($"Yum, I ate {Food}.");
+        }
+
     }
 }

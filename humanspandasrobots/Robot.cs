@@ -10,43 +10,47 @@ namespace humanspandasrobots
     {
         public string Name { get; set; }
         public string Greeting { get; set; }
-        public bool WasShutDown { get; set; }
+        public bool IsAsleep { get; set; }
+        public bool Terminator { get; set; }
 
 
-        public string DisplayName()
+        public void DisplayName()
         {
-            return this.Name;
+            Console.WriteLine($"My name is {Name}");
         }
 
-        public string DisplayGreeting()
+        public void DisplayGreeting()
         {
-            return $"{Greeting}";
+            Console.WriteLine($"My Greeting is: {Greeting}");
         }
 
-        public string StartUp()
+        public void StartUp()
         {
-            return "Started...";
+            Console.WriteLine("Started...");
         }
 
-        public string ShutDown()
+        public void ShutDown()
         {
-            return "Shutdown...";
+            Console.WriteLine("Shutdown...");
         }
 
         public bool IsTerminator()
         {
-            return $"{}, Robot is terminator.";
-        }
-
-        //    All classes should have a "IsASleep" property which returns true/false on the following conditions:
-
-        //if it's a panda or a human - then return true if the property 'ASleep' is true
-        //if it's a robot - return true if it has been shutdown.
-
-        public bool IsAsleep()
-        {
-            if (WasShutDown == true);
+            Terminator = true;
             return true;
         }
+
+        public bool GoToSleep()
+        {
+            IsAsleep = true;
+            return true;
+        }
+
+        public bool WakeUp()
+        {
+            IsAsleep = false;
+            return true;
+        }
+
     }
 }
