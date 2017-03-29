@@ -36,6 +36,7 @@ namespace humanspandasrobots
             baobao.Eat();
             baobao.GoToSleep();
             baobao.WakeUp();
+            baobao.CheckingOnSleepingPerson();
 
 
             var marvin = new Robot();
@@ -49,6 +50,7 @@ namespace humanspandasrobots
             marvin.IsTerminator();
             marvin.GoToSleep();
             marvin.WakeUp();
+            marvin.CheckingOnSleepingPerson();
 
             var allcreatures = new List<Creatures>
             {
@@ -60,6 +62,7 @@ namespace humanspandasrobots
                 jane, baobao
             };
 
+            baobao.DisplayType();
 
 
         }

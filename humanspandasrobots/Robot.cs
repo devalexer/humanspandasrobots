@@ -29,6 +29,18 @@ namespace humanspandasrobots
             return true;
         }
 
+        public void CheckingOnSleepingPerson()
+        {
+            if (IsAsleep)
+            {
+                Console.WriteLine($"{Name} has been shut down.");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is NOT asleep.");
+            }
+        }
+
         public bool GoToSleep()
         {
             IsAsleep = true;

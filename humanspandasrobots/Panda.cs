@@ -18,6 +18,18 @@ namespace humanspandasrobots
             Console.WriteLine($"Yum, I ate {Food}.");
         }
 
+        public void CheckingOnSleepingPerson()
+        {
+            if (IsAsleep)
+            {
+                Console.WriteLine($"{Name} is asleep.");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is NOT asleep.");
+            }
+        }
+
         public bool GoToSleep()
         {
             IsAsleep = true;

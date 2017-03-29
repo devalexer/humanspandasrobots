@@ -22,5 +22,11 @@ namespace humanspandasrobots
         {
             Console.WriteLine($"My Greeting is: {Greeting}.");
         }
+
+        public void DisplayType()
+        {
+            Console.WriteLine($"My type is " + GetType().Name);
+        }
+
     }
 }
